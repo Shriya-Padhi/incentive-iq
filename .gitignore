@@ -225,3 +225,6 @@ __marimo__/
 
 # Local vector database (rebuilt by ingest.py)
 chroma_db/
+
+# Manually saved source pages
+data/raw/
