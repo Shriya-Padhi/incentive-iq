@@ -1,0 +1,8 @@
+id,url,program,region,program_type
+smud-hvac,https://www.smud.org/HVAC,SMUD heating and cooling rebates,"Sacramento, CA",utility rebate
+smud-2026-news,https://www.smud.org/Corporate/About-us/News-and-Media/2026/2026/SMUD-boosts-rebates-for-heat-pumps,SMUD 2026 heat pump rebate increase,"Sacramento, CA",utility rebate
+ca-heehra,https://techcleanca.com/about/news/heehra-rebates-for-single-family-homes-in-northern-california-fully-reserved-as-of-february-24-2026/,California HEEHRA single-family rebates,California,state income-qualified rebate
+masssave-enhanced,https://www.masssave.com/residential/rebates-offers-services/income-based-offers/save-with-enhanced-incentives/enhanced-heating-and-cooling-rebates,Mass Save enhanced heat pump rebates,Massachusetts,utility income-qualified rebate
+mn-her,https://mn.gov/commerce/energy/consumer/energy-programs/home-energy-rebates.jsp,Minnesota Home Energy Rebates,Minnesota,state income-qualified rebate
+doe-her,https://www.energy.gov/home-energy-rebates,DOE Home Energy Rebates overview,United States,federal program overview
+irs-energy-faq,https://www.irs.gov/EnergyCreditFAQs,IRS energy credit FAQs (25C and 25D),United States,federal tax credit

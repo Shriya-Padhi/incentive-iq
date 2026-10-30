@@ -1,0 +1,7 @@
+model,type,capacity_tons,battery_kwh,compressor,cold_climate_rated,min_operating_temp_f,seer2,hspf2,cert_number,connected_controls,notes
+EC-HP24-CC,heat pump,2.0,,variable-speed,yes,-15,18.0,8.5,SAMPLE-HP-0001,yes,Fictional sample equipment from An Electrification Company
+EC-HP36-CC,heat pump,3.0,,variable-speed,yes,-15,17.5,8.3,SAMPLE-HP-0002,yes,Fictional sample equipment from An Electrification Company
+EC-HP48-CC,heat pump,4.0,,variable-speed,yes,-13,17.0,8.1,SAMPLE-HP-0003,yes,Fictional sample equipment from An Electrification Company
+EC-HP36-ST,heat pump,3.0,,two-stage,no,5,16.0,7.5,SAMPLE-HP-0004,no,Fictional sample equipment from An Electrification Company
+EC-HPWH-50,heat pump water heater,,,single-speed,no,37,,,SAMPLE-WH-0001,yes,Fictional sample equipment from An Electrification Company
+EC-BAT-5,home battery,,5,,,,,,SAMPLE-BAT-0001,yes,"Fictional sample equipment from An Electrification Company; LFP, stackable"
