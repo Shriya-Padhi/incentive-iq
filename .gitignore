@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Chainlit
+.chainlit/
+.files/
+
+# Local vector database (rebuilt by ingest.py)
+chroma_db/
