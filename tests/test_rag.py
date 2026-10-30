@@ -39,3 +39,11 @@ def test_irrelevant_question_refused_without_calling_llm(collection, monkeypatch
     out = rag.answer("best pizza in town", client, "fake", region="Sacramento, CA", collection=collection)
     assert out["answer"] == rag.NOT_FOUND
     assert client.sent is None
+
+
+def test_prompt_includes_todays_date(collection):
+    import datetime as dt
+    client = FakeClient("ok [1]")
+    rag.answer("Is the federal heat pump tax credit available?", client, "fake",
+               region="Sacramento, CA", collection=collection)
+    assert dt.date.today().isoformat() in client.sent["messages"][1]["content"]

@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import os
 import re
+import datetime as dt
 from pathlib import Path
 
 from retriever import search
@@ -21,11 +22,13 @@ Rules:
 2. Put a citation like [1] right after every fact, amount and requirement you take from a source.
    Cite each source in its own brackets, e.g. [1][3], never [1, 3].
 3. If a source says a program is closed, waitlisted, expired or subject to funding, say so plainly.
+   Compare every date range in the sources with today's date: a program whose end date has passed is NOT available.
 4. When asked whether equipment qualifies, compare the equipment specs to the program requirements in the sources.
    If the sources don't state the requirement, say it isn't stated rather than guessing.
 5. If the sources don't answer the question, say you couldn't find it in the indexed pages.
 6. Keep it short: a direct answer first, then bullets for amounts, eligibility and required paperwork.
-7. End with: "Program details change often; confirm on the official page before you buy."
+7. Never claim equipment qualifies unless a source states a requirement it meets.
+8. End with this line, without citations: "Program details change often; confirm on the official page before you buy."
 """
 
 
@@ -42,7 +45,7 @@ def mentioned_equipment(question: str, catalog: list[dict]) -> list[dict]:
 def build_prompt(question: str, hits: list[dict], equipment: list[dict],
                  region: str | None, income_tier: str | None) -> str:
     """Assemble the user message: household context, equipment specs and numbered sources."""
-    lines = [f"Question: {question}"]
+    lines = [f"Today's date: {dt.date.today().isoformat()}", f"Question: {question}"]
     if region:
         lines.append(f"Household location: {region}")
     if income_tier:
