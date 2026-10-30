@@ -45,7 +45,7 @@ citations mapped back to URLs ─► Chainlit UI (answer + sources + retrieval t
 - **Equipment check.** Specs from a sample product catalog are compared against program requirements.
 - **Retrieval transparency.** The UI shows the passages the model read and their similarity scores.
 
-![Settings: product, location and income tier](docs/settings.png)
+![Settings: product, location and income tier](docs/settingspanel.png)
 
 ## Data
 
